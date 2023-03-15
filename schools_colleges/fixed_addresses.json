@@ -1,0 +1,86 @@
+{
+  "1515" : 
+	{"add":"850 Stony Fort Road",
+	"city":"South Kingstown",
+	"zip":"02874"},
+  "3518" : 
+	{"add":"21 Gordon Avenue",
+	"city":"Providence",
+	"zip":"02905"},
+  "2937" : 
+	{"add":"126 Somerset Street",
+	"city":"Providence",
+	"zip":"02907"},
+  "2358" : 
+  	{"add":"574 Hope Street",
+	"city":"Bristol",
+	"zip":"02809"},
+  "712" : 
+  	{"add":"15 High Street",
+	"city":"Block Island",
+	"zip":"02807"},
+  "1299": 
+  	{"add":"Lennox Ln",
+	"city":"Warwick",
+	"zip":"02889"},
+  "1009" : 
+  	{"add":"126 Somerset Street",
+	"city":"Providence",
+	"zip":"02907"},
+  "1438" : 
+  	{"add":"840 Providence Street",
+	"city":"West Warwick",
+	"zip":"02893"},
+  "1102" : 
+  	{"add":"1 Prospect Street",
+	"city":"Providence",
+	"zip":"02912"},
+  "1220" : 
+  	{"add":"35 Campus Avenue",
+	"city":"Kingstown",
+	"zip":"02881"},
+  "136" : 
+  	{"add":"27 College Lane",
+	"city":"Barrington",
+	"zip":"02806"},
+  "1640" : 
+  	{"add":"4605 Old Post Road",
+	"city":"Charlestown",
+	"zip":"02813"},
+  "857" : 
+  	{"add":"222 Main Street",
+	"city":"Pawtucket",
+	"zip":"02860"},
+  "2392" : 
+  	{"add":"1400 Oaklawn Avenue",
+	"city":"Cranston",
+	"zip":"02920"},
+  "1642" : 
+  	{"add":"1116 Main Street",
+	"city":"Hopkinton",
+	"zip":"02832"},
+  "2574" : 
+  	{"add":"8 John H Chafee Blvd",
+	"city":"Newport",
+	"zip":"02840"},
+  "1206" : 
+  	{"add":"366 Main Street",
+	"city":"Wakefield",
+	"zip":"02879"},
+  "1208" : 
+  	{"add":"251 B Post Road",
+	"city":"South Kingstown",
+	"zip":"02879"},
+  "111" : 
+  	{"add":"4781 Tower Hill Road",
+	"city":"South Kingstown",
+	"zip":"02879"},
+  "1524" : 
+  	{"add":"63 Power Road",
+	"city":"Cranston",
+	"zip":"02920"},
+  "1522" : 
+  	{"add":"6 Wilma Schesler Lane",
+	"city":"Cranston",
+	"zip":"02920"}
+}
