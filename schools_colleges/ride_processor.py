@@ -181,10 +181,11 @@ colnew={'name_short_30':'name_30','name_short_15':'name_15','org_type_ID':'orgty
         'sch_sub_type_ID':'subtype_ID','sch_sub_type_name':'subtype_nm'}
 
 df_final.rename(columns = colnew, inplace = True) # Rename columns to 10 chars or less
+df_final.index.name='seqid'
 today=str(date.today()).replace('-','_')
 outfile='schools_ri_'+today+'.csv'
 outpath=os.path.join(outfolder,outfile)
-df_final.to_csv(outpath, index_label='seqid')
+df_final.to_csv(outpath)
 
 mfile=outfile.split('.')[0]+'_MULTIPLES.txt'
 with open(os.path.join(outfolder,mfile), 'w', newline='') as writefile:
