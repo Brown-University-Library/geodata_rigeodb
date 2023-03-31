@@ -1,6 +1,6 @@
-# RI Geodatabase
+# Ocean State Spatial Database
 
-This repository includes a collection of scripts used to generate layers and census data tables for the RI Geodatabase, which is a collection of spatial layers and attributes for mapping and analyzing data in Rhode Island. The database has not been released yet; release is slated for summer 2023.
+This repository includes a collection of scripts used to generate layers and census data tables for the Ocena State Spatial Database (OSSBD), which is a collection of spatial layers and attributes for mapping and analyzing data in Rhode Island. The database has not been released yet; release is slated for summer 2023.
 
 Most of the database layers are relatively static and only need to be updated once every ten years, as they are based on the decennial TIGER Line files and census data.  Some features are updated on an annual basis, where older data is swapped for the most recent release.  Scripts for these layers will be included in this repo:
 
