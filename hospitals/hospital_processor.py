@@ -6,7 +6,7 @@ for hospitals, using the RIDOT address locator
 Output coordinates are in RI State Plane
 
 Frank Donnelly / GIS and Data Librarian / Brown University
-Mar 23, 2023
+Mar 23, 2023, Revised Mar 31, 2023
 """
 
 import csv, os, sys, requests, json, pandas as pd, geopandas as gpd
@@ -131,6 +131,22 @@ df_final=df_all.join(df_match)
 
 print(df_match.match_note.value_counts())
 match_count=df_match['match_note'].value_counts().to_dict()
+
+# This block handles hospitals that have coordinates returned that do a poor job
+# of representing the center of the hospital complex.
+
+hosp_xyfix={'HOS00133':{'name':'ROGER WILLIAMS MED CNTR','x':'345765.18902292347','y':'273771.30659775337'},
+            'HOS00121':{'name':'RI HOSPITAL','x':'352862.434986831','y':'265450.9228263157'}}
+
+for k, v in hosp_xyfix.items():
+    if k in df_final['License No'].values:
+        idx = df_final.loc[df_final['License No']==k].index[0]
+        df_final.loc[df_final.index == idx, 'xcoord'] = v['x']
+        df_final.loc[df_final.index == idx, 'ycoord'] = v['y']
+        df_final.loc[df_final.index == idx, 'match_note'] = 'MANUAL MATCH'
+        print('Manual fix applied for',v['name'])
+    else:
+        print('No fix applied for',k,', ID in dictionary not in dframe.')
 
 # Write Output to CSV
 

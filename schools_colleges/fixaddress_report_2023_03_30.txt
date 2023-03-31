@@ -1,0 +1,104 @@
+
+ Updating address for record 
+ [['1515' 'Kingston Hill Academy' '850 Stony Fort Road Saunderstown 02874']] 
+ To new address: 850 Stony Fort Road South Kingstown 02874 
+
+
+ Updating address for record 
+ [['3518' 'Nuestro Mundo Public Charter School'
+  '17-21 Gordon Avenue Providence 02905']] 
+ To new address: 21 Gordon Avenue Providence 02905 
+
+
+ Updating address for record 
+ [['2937' 'SouthSide Elementary Charter School'
+  '135 Prairie Ave Providence 02905']] 
+ To new address: 126 Somerset Street Providence 02907 
+
+
+ Updating address for record 
+ [['2358' 'Colt Andrews School' '570-574 Hope Street Bristol 02809']] 
+ To new address: 574 Hope Street Bristol 02809 
+
+
+ Updating address for record 
+ [['1299' 'Warwick Neck School'
+  '150 Lennox Avenue (formerly 155 Rocky Pt Ave) Warwick 02889']] 
+ To new address: Lennox Ln Warwick 02889 
+
+
+ Updating address for record 
+ [['1009' 'Community Preparatory School'
+  '135 Prairie Avenue Providence 02907']] 
+ To new address: 126 Somerset Street Providence 02907 
+
+
+ Updating address for record 
+ [['1438' 'Islamic School of RI'
+  '840 (Rear) Providence Street West Warwick 02893']] 
+ To new address: 840 Providence Street West Warwick 02893 
+
+
+ Updating address for record 
+ [['1102' 'Brown University' 'Prospect Street Providence 02912']] 
+ To new address: 1 Prospect Street Providence 02912 
+
+
+ Updating address for record 
+ [['1220' 'University of Rhode Island' 'Green Hall Kingston 02881']] 
+ To new address: 35 Campus Avenue Kingstown 02881 
+
+
+ Updating address for record 
+ [['136' 'Barrington Early Childhood Center, Inc.'
+  'P.O. Box 448 Barrington 02806']] 
+ To new address: 27 College Lane Barrington 02806 
+
+
+ Updating address for record 
+ [['1640' 'Charlestown Early Learning Center'
+  'P.O. Box 220 Charlestown 02813']] 
+ To new address: 4605 Old Post Road Charlestown 02813 
+
+
+ Updating address for record 
+ [['857' 'Newport School of Hairdressing'
+  '222-226 Main Street Pawtucket 02860']] 
+ To new address: 222 Main Street Pawtucket 02860 
+
+
+ Updating address for record 
+ [['2392' 'Toni and Guy Hairdressing Academy'
+  "Marshalls's Plaza Cranston 02920"]] 
+ To new address: 1400 Oaklawn Avenue Cranston 02920 
+
+
+ Updating address for record 
+ [['1642' 'Wood River Preschool' '1059 Main Street Hope Valley 02832']] 
+ To new address: 1116 Main Street Hopkinton 02832 
+
+
+ Updating address for record 
+ [['2574'
+  'East Bay Community Action Program Head Start @ John Chafee Blvd'
+  '8 John Chafee Blvd Newport 02840']] 
+ To new address: 8 John H Chafee Blvd Newport 02840 
+
+
+ Updating address for record 
+ [['1206' 'Gingerbread House Nursery School, Inc.'
+  '366 Main Street Wakefield 02880']] 
+ To new address: 366 Main Street Wakefield 02879 
+
+
+ Updating address for record 
+ [['1208' 'Village Cooperative Nursery School'
+  '981 Kingstown Road Peace Dale 02883']] 
+ To new address: 251 B Post Road South Kingstown 02879 
+
+
+ Updating address for record 
+ [['1524' 'DCYF Alternative Education Program'
+  '57 Power Road Cranston 02920']] 
+ To new address: 63 Power Road Cranston 02920 
+
