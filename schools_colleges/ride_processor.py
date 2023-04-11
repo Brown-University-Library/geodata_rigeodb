@@ -6,7 +6,7 @@ for schools and colleges, using the RIDOT address locator
 Output coordinates are in RI State Plane
 
 Frank Donnelly / GIS and Data Librarian / Brown University
-Mar 15, 2023 revised March 30, 2023
+Mar 15, 2023 revised April 4, 2023
 """
 
 import csv, os, sys, requests, json, pandas as pd, geopandas as gpd
@@ -65,9 +65,10 @@ df_all.drop(df_all[df_all.location_state != 'RI'].index, inplace=True) # Not in 
 print('After dropping outside RI:',df_all.shape[0])
 #  Have to handle Metro Career differently, as multiple campuses have same ID
 dfmetro=df_all.loc[df_all['org_ID']=='1521'].copy(deep=True)
-dfmetro.drop_duplicates(subset=['location_address2'], keep='first',inplace=True)
+df_all.drop(df_all.loc[df_all['org_ID']=='1521'].index, inplace=True)
+dfmetro.drop_duplicates(subset=['location_address1','location_address2'],keep='first',inplace=True)
 # Drop duplicate ID records, data comes from a directory with repeats for differemt admins
-df_all.drop_duplicates(subset=['org_ID', 'code'], keep=False,inplace=True)
+df_all.drop_duplicates(subset=['org_ID', 'code'], keep='first',inplace=True)
 df_sch=pd.concat([df_all,dfmetro],ignore_index=True) # After handling dupes, recombine metro with others     
 print('After dropping duplicates:',df_sch.shape[0])
 # Remove trailing and leading whitespace

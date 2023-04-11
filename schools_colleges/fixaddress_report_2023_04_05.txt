@@ -22,6 +22,11 @@
 
 
  Updating address for record 
+ [['712' 'Block Island School' 'Block Island School Block Island 02807']] 
+ To new address: 15 High Street Block Island 02807 
+
+
+ Updating address for record 
  [['1299' 'Warwick Neck School'
   '150 Lennox Avenue (formerly 155 Rocky Pt Ave) Warwick 02889']] 
  To new address: Lennox Ln Warwick 02889 
@@ -98,7 +103,18 @@
 
 
  Updating address for record 
+ [['111' 'Bradley School-South' '31 Fairfield Way Wakefield 02879']] 
+ To new address: 4781 Tower Hill Road South Kingstown 02879 
+
+
+ Updating address for record 
  [['1524' 'DCYF Alternative Education Program'
   '57 Power Road Cranston 02920']] 
  To new address: 63 Power Road Cranston 02920 
+
+
+ Updating address for record 
+ [['1522' 'RI Department of Corrections, Education Unit'
+  '18 Wilma Schesler Lane, Dix Building Cranston 02920']] 
+ To new address: 6 Wilma Schesler Lane Cranston 02920 
 

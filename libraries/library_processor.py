@@ -6,7 +6,7 @@ for libraries, using the RIDOT address locator
 Output coordinates are in RI State Plane
 
 Frank Donnelly / GIS and Data Librarian / Brown University
-Mar 28, 2023
+Mar 28, 2023, revised Apr 3, 2023
 """
 
 import csv, os, sys, requests, json, pandas as pd, geopandas as gpd
@@ -47,7 +47,7 @@ print('After dropping outside RI:',df_all.shape[0])
 # Not central CE or branch BR libraries (drop bookmobiles BS and Books by mail BM)
 df_all.drop(df_all[df_all.C_OUT_TY.isin(['BS','BM'])].index, inplace=True)  
 print('After bookmobiles and books by mail:',df_all.shape[0]) 
-df_all.reset_index(inplace=True)
+df_all.reset_index(drop=True, inplace=True)
 # Remove trailing and leading whitespace
 df_all['LIBNAME']=df_all['LIBNAME'].str.strip()
 df_all['ADDRESS']=df_all['ADDRESS'].str.strip()

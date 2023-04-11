@@ -6,7 +6,7 @@ for hospitals, using the RIDOT address locator
 Output coordinates are in RI State Plane
 
 Frank Donnelly / GIS and Data Librarian / Brown University
-Mar 23, 2023, Revised Mar 31, 2023
+Mar 23, 2023, Revised Apr 5, 2023
 """
 
 import csv, os, sys, requests, json, pandas as pd, geopandas as gpd
@@ -47,6 +47,8 @@ print('All records:',df_all.shape[0])
 # Remove trailing and leading whitespace
 df_all['Name']=df_all['Name'].str.strip()
 df_all['Address Line 1']=df_all['Address Line 1'].str.strip()
+# Add current year for each record
+df_all['year']=today.split('_')[0]
 
 # Read in a file with addresses for records known to not match
 with open(fixfile, mode="r") as jfile:
