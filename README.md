@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Ocean State Spatial Database (OSSDB) is a geodatabase created by the Brown University Library [GeoData@SciLi]() team, for conducting basic geographic analysis and thematic mapping within the State of Rhode Island. It is intended to serve as a basic foundation for contemporary mapping projects, and as an educational tool for supporting GIS coursework and introducing spatial databases and SQL. It contains geographic features and data compiled from several public sources. A subset of the Census Bureau's TIGER/LINE water features were used to create a base map of coastal water, which was used to clip and create land-based areas for census geographies including counties, county subdivisions, census tracts, and ZCTAs. Census data from the 2020 Census and American Community Survey (ACS) are stored in tables that can be easily related to geographic features. Point data for public facilities like schools and libraries were gathered from several state and federal agencies and transformed into spatial data that can be used for reference mapping, or analysis for measuring distance, drawing buffers, or counting features within areas. Objects in the database are labelled with a prefix that groups them into categories:
+The Ocean State Spatial Database (OSSDB) is a geodatabase created by the Brown University Library [GeoData@SciLi](https://libguides.brown.edu/geodata/) team, for conducting basic geographic analysis and thematic mapping within the State of Rhode Island. It is intended to serve as a basic foundation for contemporary mapping projects, and as an educational tool for supporting GIS coursework and introducing spatial databases and SQL. It contains geographic features and data compiled from several public sources. A subset of the Census Bureau's TIGER/LINE water features were used to create a base map of coastal water, which was used to clip and create land-based areas for census geographies including counties, county subdivisions, census tracts, and ZCTAs. Census data from the 2020 Census and American Community Survey (ACS) are stored in tables that can be easily related to geographic features. Point data for public facilities like schools and libraries were gathered from several state and federal agencies and transformed into spatial data that can be used for reference mapping, or analysis for measuring distance, drawing buffers, or counting features within areas. Objects in the database are labelled with a prefix that groups them into categories:
 
 - 'a' objects are land-area features to be used for thematic mapping
 
@@ -26,15 +26,15 @@ The database and associated documentation are licensed under a [Creative Commons
 
 <u>CURRENT VERSION</u>: ossdb_2023_07
 
-- OSSDB SQLite: the primary database, a SQLite / Spatialite database that can be used in desktop GIS packages such as QGIS and ArcGIS Pro, and SQL database tools like the QGIS DB Manager, Spatialite GUI, and DB Browser for SQLite
+- [OSSDB SQLite](https://github.com/Brown-University-Library/geodata_ossdb/raw/main/current_db/ossdb_sqlite.zip): the primary database, a SQLite / Spatialite database that can be used in desktop GIS packages such as QGIS and ArcGIS Pro, and SQL database tools like the QGIS DB Manager, Spatialite GUI, and DB Browser for SQLite
 
-- OSSDB File Geodatabase: a copy of the database in the ESRI File Geodatabase format, which can be edited in ArcGIS Pro (the Spatialite format in ArcGIS Pro is read only)
+- [OSSDB File Geodatabase](https://github.com/Brown-University-Library/geodata_ossdb/raw/main/current_db/ossdb_esri_gdb.zip): a copy of the database in the ESRI File Geodatabase format, which can be edited in ArcGIS Pro (the Spatialite format in ArcGIS Pro is read only)
 
-- OSSDB Summary: a two-page summary of the database with instructions on how to connect to it in QGIS and ArcGIS Pro (included with the database download)
+- [Summary](https://raw.githubusercontent.com/Brown-University-Library/geodata_ossdb/main/current_db/bul_ossdb_summary.pdf): a two-page summary of the database with instructions on how to connect to it in QGIS and ArcGIS Pro (included with the database download)
 
-- OSSDB Documentation: 
+- [Documentation](https://raw.githubusercontent.com/Brown-University-Library/geodata_ossdb/main/current_db/bul_ossdb_guide.pdf): in-depth documentation that describes database updates, contents, structure, and instructions for accessing via GIS and database software (included with the database download)
 
-- Metadata: one record for each feature and table in the database; click on the markdown (.md) copy for a readable version (included with the database download)
+- [Metadata](https://github.com/Brown-University-Library/geodata_ossdb/tree/main/current_db/metadata): one record for each feature and table in the database; click on the markdown (.md) copy for a readable version (included with the database download)
 
 ## Features
 
