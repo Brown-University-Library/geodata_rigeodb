@@ -18,7 +18,7 @@ This repository includes the spatial database in a SQLite / Spatialite format an
 
 ## Rights and Use
 
-The database and associated documentation are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]() CC BY-NC-SA ![](images\cc_license.png). You are free to share and to adapt the work as long as you cite the source, do not use it for commercial purposes, and release adaptations under the same license.
+The database and associated documentation are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]() CC BY-NC-SA ![CC BY-NC-SA](/images/cc_license.png). You are free to share and to adapt the work as long as you cite the source, do not use it for commercial purposes, and release adaptations under the same license.
 
 *Disclaimer: Every effort was made to insure that the data, which was compiled from public sources, was processed and presented accurately. The creators and Brown University disclaim any liability for errors, inaccuracies, or omissions that may be contained therein or for any damages that may arise from the foregoing. Users should independently verify the accuracy and fitness of the data for their purposes.*
 
@@ -62,7 +62,7 @@ The database and associated documentation are licensed under a [Creative Commons
 
 6. To interpret the data in the "c" census data tables, add the lookup table to the project, and open it as an attribute table. This table correlates variable identifiers with variable names. To map the data, add the table and its matching geospatial "a" feature to a project. Select the "a" feature in the *Layers panel*, right click, and choose *Properties*. On the *Joins tab*, hit the green plus symbol to add a new join. Join the "c" table to the "a" feature using the GEOIDLONG identifier that they share in common. Confirm the join, and then you can access the *Symbology tab* of the "a" features to make a graduated area map from columns stored in the "c" table.
    
-   ![](\images\qgis_example.png)
+   ![QGIS](/images/qgis_example.png)
 
 ## Connect with QGIS DB Manager
 
@@ -78,7 +78,7 @@ The database and associated documentation are licensed under a [Creative Commons
 
 6. The *SQL Window* button at the top will allow you to execute SQL and spatial SQL queries. Hit the button, and type your SQL query in the top window. Hit the *Execute* button to see the results in the bottom menu. You can load the result as a new, temporary layer to the map window to view it, and can save the result either as a view or a new table in the database.
 
-![](\images\qgis_dbm_example.png)
+![QGIS DB Manager](/images/qgis_dbm_example.png)
 
 ## Connect with ArcGIS Pro
 
@@ -94,4 +94,4 @@ The database and associated documentation are licensed under a [Creative Commons
 
 6. To interpret the data in the "c" census data tables, add the lookup table to the project, and open it as an attribute table. This table correlates variable identifiers with variable names. To map the data, add the table and its matching geospatial "a" feature to a project. Select the "a" feature in the *Contents pane*, right click, and choose* Joins and Relates - Joins*. Join the "c" table to the "a" feature using the GEOIDLONG identifier that they share in common. Confirm the join, and then you can access the *Symbology* of the "a" features to make a graduated area or symbol map from columns stored in the "c" table.
 
-![](\images\arcgis_example.png)
+![ArcGIS Pro](/images/arcgis_example.png)
