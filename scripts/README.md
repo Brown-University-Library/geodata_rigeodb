@@ -1,6 +1,6 @@
 # Ocean State Spatial Database Scripts
 
-This portion of the repository hosts  scripts used to generate layers and census data tables for the Ocean State Spatial Database (OSSDB). Most of the database layers are relatively static and only need to be updated once every ten years, as they are based on the decennial TIGER Line files and census data. These features were created manually in QGIS. Some features are updated on an annual basis, where older data is swapped for the most recent release.  Scripts for these layers are included here:
+This portion of the repository hosts  scripts used to generate layers and census data tables for the Ocean State Spatial Database (OSSDB). Most of the database layers are relatively static and only need to be updated once every ten years, as they are based on the decennial TIGER Line files. These features were created manually in QGIS. Some features are updated on an annual basis, where older data is swapped for the most recent release.  Scripts for these layers are included here:
 
 1) Point features that include colleges, public libraries, hospitals, and schools.
 
