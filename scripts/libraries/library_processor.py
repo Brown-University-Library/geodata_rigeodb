@@ -17,8 +17,8 @@ from time import sleep
 
 geocode=True # TYPE True to geocode, False to exit to verify addresses are correct
 
-infolder='input_pls_fy2020_csv' # UPDATE input directory
-outfolder='output_pls_fy2020_csv'# UPDATE output directory
+infolder='input_pls_fy2021_csv' # UPDATE input directory
+outfolder='output_pls_fy2021_csv'# UPDATE output directory
 fixfile='fixed_addresses.json'
 today=str(date.today()).replace('-','_')
 
@@ -35,7 +35,7 @@ typecols={'FSCS_SEQ':str,'ZIP':str, 'LOCALE':str}
 # Each file is stored in a df, added to a list, and concatenated into one df
 
 for dfile in os.listdir(infolder):
-    if dfile.split('_')[2] == 'Outlet':
+    if dfile.split('_')[2] == 'outlet':
         libfile=os.path.join(infolder,dfile)    
         df_all=pd.read_csv(libfile,usecols=keepcols,dtype=typecols,encoding_errors='ignore')
 

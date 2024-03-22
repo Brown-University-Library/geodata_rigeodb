@@ -5,8 +5,8 @@ for schools and colleges, using the RIDOT address locator
 
 Output coordinates are in RI State Plane
 
-Frank Donnelly / GIS and Data Librarian / Brown University
-Mar 15, 2023 revised April 4, 2023
+Frank Donnelly / Head of GIS & Data Services / Brown University Library
+Mar 15, 2023 revised Mar 19, 2024
 """
 
 import csv, os, sys, requests, json, pandas as pd, geopandas as gpd
@@ -17,8 +17,8 @@ from time import sleep
 
 geocode=True # TYPE True to geocode, False to exit to verify addresses are correct
 
-infolder='input_03_2023' # UPDATE input directory
-outfolder='output_03_2023'# UPDATE output directory
+infolder='input_03_2024' # UPDATE input directory
+outfolder='output_03_2024'# UPDATE output directory
 fixfile='fixed_addresses.json'
 today=str(date.today()).replace('-','_')
 
@@ -157,9 +157,6 @@ print('Finished geocoding',idx+1,'records','\n')
 df_match = pd.DataFrame(matches[1:], columns=matches[0]).set_index('uid')
 df_final=df_sch.join(df_match)
 
-print(df_match.match_note.value_counts())
-match_count=df_match['match_note'].value_counts().to_dict()
-
 # This block handles missing RI E911 address for Warwick Neck School
 # DELETE in future if system is updated with this address
 if '1299' in df_final['org_ID'].values:
@@ -173,6 +170,10 @@ if '1299' in df_final['org_ID'].values:
         print('No fix applied for Warwick Neck School: already has a matching address.')
 else:
     print('No fix applied for Warwick Neck School: record not in the dataset.')
+
+# Get summary of match counts
+print(df_final.match_note.value_counts())
+match_count=df_final['match_note'].value_counts().to_dict()
 
 # Write Output to CSV
 

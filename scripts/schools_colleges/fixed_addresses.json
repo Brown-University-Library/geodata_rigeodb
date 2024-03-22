@@ -82,5 +82,9 @@
   "1522" : 
   	{"add":"6 Wilma Schesler Lane",
 	"city":"Cranston",
-	"zip":"02920"}
+	"zip":"02920"},
+  "1306" : 
+  	{"add":"85 Byfield Street",
+	"city":"Warwick",
+	"zip":"02888"}
 }
