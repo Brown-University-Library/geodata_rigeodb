@@ -6,24 +6,30 @@ import sqlite3, os, sys
 os.chdir('..')
 
 #MODIFY these values to pull from the right sources
-#db1 should be the original db
-db1='ossdb_2023_05.sqlite'
-tabdrop=[]
+#db1 should be the original db - store in folder above this script
+db1='ossdb_2024_05_WORKING.sqlite'
+# tabdrop=['c_acs2021_lookup',
+#           'c_csubdivs_acs2021_pophous','c_csubdivs_acs2021_socecon',
+#           'c_tracts_acs2021_pophous','c_tracts_acs2021_socecon',
+#           'c_zctas_acs2021_pophous','c_zctas_acs2021_socecon']
+tabdrop=['c_zctas_zbp2021_emp','c_zctas_zbp2021_ind','c_zbp2021_indcodes',
+         'c_zip2zcta2022']
 
 #db2 should be the test database
 #Keys (k) are the test db table names, values (v) will be the new table names
-db2=os.path.join('census_acs','outputs','testdb.sqlite')
-tabadd={'acs2021_lookup':'c_acs2021_lookup',
-        'county_subdivs_acs2021_pophousing': 'c_csubdivs_acs2021_pophous',
-        'county_subdivs_acs2021_socialecon': 'c_csubdivs_acs2021_socecon',
-        'tracts_acs2021_pophousing': 'c_tracts_acs2021_pophous',
-        'tracts_acs2021_socialecon': 'c_tracts_acs2021_socecon',
-        'zctas_acs2021_pophousing': 'c_zctas_acs2021_pophous',
-        'zctas_acs2021_socialecon': 'c_zctas_acs2021_socecon',
-        }
-#tabadd={'census2020_plrd_lookup':'c_census2020_plrd_lookup',
-#        'county_subdivs_census2020_plrd': 'c_csubdivs_census2020_plrd',
-#        'tracts_census2020_plrd': 'c_tracts_census2020_plrd'}
+db2=os.path.join('census_zbp','outputs','testdb.sqlite')
+# tabadd={'acs2022_lookup':'c_acs2022_lookup',
+#         'county_subdivs_acs2022_pophousing': 'c_csubdivs_acs2022_pophous',
+#         'county_subdivs_acs2022_socialecon': 'c_csubdivs_acs2022_socecon',
+#         'tracts_acs2022_pophousing': 'c_tracts_acs2022_pophous',
+#         'tracts_acs2022_socialecon': 'c_tracts_acs2022_socecon',
+#         'zctas_acs2022_pophousing': 'c_zctas_acs2022_pophous',
+#         'zctas_acs2022_socialecon': 'c_zctas_acs2022_socecon',
+#         }
+tabadd={'zbp2021_emp':'c_zctas_zbp2021_emp',
+        'zbp2021_ind': 'c_zctas_zbp2021_ind',
+        'zbp2021_indcodes': 'c_zbp2021_indcodes',
+        'zip2zcta_2022': 'c_zip2zcta2022'}
 
 def table_exists(dbalias,dbname,tablist):
     for t in tablist:

@@ -6,7 +6,7 @@ for schools and colleges, using the RIDOT address locator
 Output coordinates are in RI State Plane
 
 Frank Donnelly / Head of GIS & Data Services / Brown University Library
-Mar 15, 2023 revised Mar 19, 2024
+Mar 15, 2023 revised Apr 16, 2024
 """
 
 import csv, os, sys, requests, json, pandas as pd, geopandas as gpd
@@ -54,7 +54,9 @@ for dfile in os.listdir(infolder):
         df['location_address1'] = df['location_address1'].str.replace('One','1')
         dflist.append(df)
             
-df_all=pd.concat(dflist,axis=0,ignore_index=True)     
+df_all=pd.concat(dflist,axis=0,ignore_index=True)   
+
+df_debug=df_all.copy(deep=True)
 
 # CLEANING - Subset records
    
@@ -63,6 +65,8 @@ df_all.drop(df_all[df_all.org_type_ID != 2].index, inplace=True)  # Not schools
 print('After dropping non-schools:',df_all.shape[0]) 
 df_all.drop(df_all[df_all.location_state != 'RI'].index, inplace=True) # Not in RI
 print('After dropping outside RI:',df_all.shape[0])
+df_all.drop(df_all[df_all.sch_sub_type_ID == '9'].index, inplace=True) # Drop Ind Higher Ed (source data is not reliable)
+print('After dropping Ind Higher Ed:',df_all.shape[0])
 #  Have to handle Metro Career differently, as multiple campuses have same ID
 dfmetro=df_all.loc[df_all['org_ID']=='1521'].copy(deep=True)
 df_all.drop(df_all.loc[df_all['org_ID']=='1521'].index, inplace=True)
@@ -197,7 +201,7 @@ with open(os.path.join(outfolder,mfile), 'w', newline='') as writefile:
 # Create shapefiles and write
 
 slist=['1','3','4','5','6','7','11','12','22','23'] # codes pk-12 schools
-clist=['9','10','24'] # codes colleges and universities
+clist=['10','24'] # codes colleges and universities
 
 if 'NO MATCHES' in match_count: # Must delete records with no matched coordinates
     idxnames=df_final[df_final['match_note'] == 'NO MATCHES'].index

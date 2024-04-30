@@ -24,7 +24,7 @@ The database and associated documentation are licensed under a [Creative Commons
 
 ## Downloads
 
-<u>CURRENT VERSION</u>: ossdb_2023_07
+<u>CURRENT VERSION</u>: ossdb_2024_05
 
 - [OSSDB SQLite](https://github.com/Brown-University-Library/geodata_ossdb/raw/main/current_db/ossdb_sqlite.zip): the primary database, a SQLite / Spatialite database that can be used in desktop GIS packages such as QGIS and ArcGIS Pro, and SQL database tools like the QGIS DB Manager, Spatialite GUI, and DB Browser for SQLite
 
@@ -42,7 +42,7 @@ The database and associated documentation are licensed under a [Creative Commons
 
 - Legal / statistical boundaries for the same areas. "b" features for reference mapping.
 
-- 5-year American Community Survey (ACS) socio-economic, population, and housing tables (updated annually), and 2020 census tables for county subdivisions, ZCTAs, and tracts. Variables can be identified using the lookup table for each dataset. Each ACS variable comes with four columns: an estimate, a margin of error, a percent total, and a margin of error for the percent total. "c" tables can be joined to "a" features using GEOIDLONG columns.
+- 5-year American Community Survey (ACS) socio-economic, population, and housing tables (updated annually) and 2020 census tables for county subdivisions, ZCTAs, and tracts. Counts of business establishments by industry for ZCTAs (updated annually). Variables can be identified using the lookup table for each dataset. Each ACS variable comes with four columns: an estimate, a margin of error, a percent total, and a margin of error for the percent total. "c" tables can be joined to "a" features using GEOIDLONG columns.
 
 - Point features for colleges and universities, preK-12 schools, public libraries, and hospitals. "d" features updated annually.
 

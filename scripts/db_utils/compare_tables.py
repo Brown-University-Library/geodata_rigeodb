@@ -8,15 +8,15 @@ os.chdir('..')
 
 #Modify these values to test different sources
 #db1 should be the original db
-db1='nyc_gdb_jan2020.sqlite' 
-tab1='b_zctas_2017biz_emp'
-uid1='zcta5'
-col1='estab'
+db1='ossdb_2023_07.sqlite' 
+tab1='c_zctas_acs2021_socecon'
+uid1='GEOIDLONG'
+col1='HSHD01_E'
 #db2 should be the test database
-db2=os.path.join('census_zbp','outputs','testdb.sqlite')
-tab2='zbp2018emp'
-uid2='zcta5'
-col2='estab'
+db2=os.path.join('census_acs','outputs','testdb.sqlite')
+tab2='zctas_acs2022_socialecon'
+uid2='GEOIDLONG'
+col2='HSHD01_E'
 
 def leftjoin(left_id,left_t,right_id,right_t):
     lquery='''SELECT a.{0}
@@ -29,6 +29,8 @@ def leftjoin(left_id,left_t,right_id,right_t):
         print('The following IDs from', left_t, 'have no matching records in',right_t)
         for i in no_ids:
             print(i)
+
+print('COMPARING',tab1,'to',tab2,'\n')
     
 con = sqlite3.connect(db1)
 cur = con.cursor()

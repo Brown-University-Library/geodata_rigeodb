@@ -7,24 +7,29 @@ os.chdir('..')
 
 #MODIFY these values to pull from the right sources
 #db1 should be the original db
-db1='ossdb_2023_07.sqlite'
-tabdrop=[]
+db1='ossdb_2024_05_WORKING.sqlite'
+tabdrop=['c_census2020_plrd_lookup','c_csubdivs_census2020_plrd',
+         'c_tracts_census2020_plrd']
 
 #db2 should be the test database
 #Keys (k) are the test db table names, values (v) will be the new table names
-db2=os.path.join('census_acs','outputs','testdb.sqlite')
+db2=os.path.join('census_2020','outputs','testdb.sqlite')
 
-#tabadd={'census2020_plrd_lookup':'c_census2020_plrd_lookup',
-#        'county_subdivs_census2020_plrd': 'c_csubdivs_census2020_plrd',
-#        'tracts_census2020_plrd': 'c_tracts_census2020_plrd'}
+tabadd={'census2020_lookup':'c_census2020_lookup',
+        'county_subdivs_census2020_count': 'c_csubdivs_census2020_count',
+        'county_subdivs_census2020_pct': 'c_csubdivs_census2020_pct',
+        'tracts_census2020_count': 'c_tracts_census2020_count',
+        'tracts_census2020_pct': 'c_tracts_census2020_pct',
+        'zctas_census2020_count': 'c_zctas_census2020_count',
+        'zctas_census2020_pct': 'c_zctas_census2020_pct'}
 
-tabadd={'acs2021_lookup':'c_acs2021_lookup',
-'county_subdivs_acs2021_pophousing':'c_csubdivs_acs2021_pophous',
-'county_subdivs_acs2021_socialecon':'c_csubdivs_acs2021_socecon',
-'tracts_acs2021_pophousing':'c_tracts_acs2021_pophous',
-'tracts_acs2021_socialecon':'c_tracts_acs2021_socecon',
-'zctas_acs2021_pophousing':'c_zctas_acs2021_pophous',
-'zctas_acs2021_socialecon':'c_zctas_acs2021_socecon'}
+# tabadd={'acs2021_lookup':'c_acs2021_lookup',
+# 'county_subdivs_acs2021_pophousing':'c_csubdivs_acs2021_pophous',
+# 'county_subdivs_acs2021_socialecon':'c_csubdivs_acs2021_socecon',
+# 'tracts_acs2021_pophousing':'c_tracts_acs2021_pophous',
+# 'tracts_acs2021_socialecon':'c_tracts_acs2021_socecon',
+# 'zctas_acs2021_pophousing':'c_zctas_acs2021_pophous',
+# 'zctas_acs2021_socialecon':'c_zctas_acs2021_socecon'}
 
 def table_exists(dbalias,dbname,tablist):
     for t in tablist:
