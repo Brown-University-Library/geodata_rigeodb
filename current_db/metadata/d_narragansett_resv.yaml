@@ -59,7 +59,7 @@ dcat_bbox: 'ENVELOPE(-71.7018,-71.6309,41.4309,41.3850)'
 # RIGHTS
 dct_rights_sm: 
 - The data are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You are free to share and to adapt the work as long as you cite the source, do not use it for commercial purposes, and release adaptations under the same license.
-- Disclaimer. Every effort was made to insure that the data, which was compiled from public sources, was processed and presented accurately. The creators and Brown University disclaim any liability for errors, inaccuracies, or omissions that may be contained therein or for any damages that may arise from the foregoing. Users should independently verify the accuracy and fitness of the data for their purposes.
+- Disclaimer. Every effort was made to ensure that the data, which was compiled from public sources, was processed and presented accurately. The creators and Brown University disclaim any liability for errors, inaccuracies, or omissions that may be contained therein or for any damages that may arise from the foregoing. Users should independently verify the accuracy and fitness of the data for their purposes.
 
 # LICENSE
 dct_license_sm:
