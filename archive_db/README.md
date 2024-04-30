@@ -14,6 +14,6 @@ The database and associated documentation are licensed under a [Creative Commons
 
 <u>Archives</u>:
 
-- [ossdb_2023_07_sqlite](https://github.com/Brown-University-Library/geodata_ossdb/raw/main/archives/ossdb_2023_07_sqlite.zip): SQLite / Spatialite version July 2023
+- [ossdb_2023_07_sqlite](https://github.com/Brown-University-Library/geodata_ossdb/raw/main/archive_db/ossdb_2023_07_sqlite.zip): SQLite / Spatialite version July 2023
 
-- [ossdb_2023_07_esri_gdb](https://github.com/Brown-University-Library/geodata_ossdb/raw/main/current_db/ossdb_2023_07_esri_gdb): ESRI File Geodatabase version July 2023
+- [ossdb_2023_07_esri_gdb](https://github.com/Brown-University-Library/geodata_ossdb/raw/main/archive_db/ossdb_2023_07_esri_gdb.zip): ESRI File Geodatabase version July 2023
