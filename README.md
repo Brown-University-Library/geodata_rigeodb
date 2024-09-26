@@ -38,6 +38,8 @@ The database and associated documentation are licensed under a [Creative Commons
 
 ## Features
 
+- [Browse the available layers on this interactive map!](https://brown.maps.arcgis.com/apps/instant/basic/index.html?appid=7674116d112744c3b74241e742fa4561)
+
 - State, counties, county subdivisions (cities and towns), ZIP Code Tabulation Areas (ZCTAs), census tracts, census tract population centroids. "a" features for thematic mapping.
 
 - Legal / statistical boundaries for the same areas. "b" features for reference mapping.
